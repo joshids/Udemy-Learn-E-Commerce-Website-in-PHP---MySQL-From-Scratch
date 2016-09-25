@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -34,13 +34,13 @@ body{
 .main_wrapper {
     width: 1000px;
     height: auto;
-    margine: auto;
+    margin: auto;
 }
 
 .header_wrapper {
     width: 1000px;
     height: 100px;
-    margine: auto;    
+    margin: auto;    
 }
 
 #logo {
@@ -73,7 +73,7 @@ body{
     text-decoration: none;
     color: white;
     padding: 8px;
-    margine: 5px;
+    margin: 5px;
     font-size: 18px;
     font-family: comic sans ms;
 }
@@ -91,7 +91,7 @@ body{
 .content_wrapper {
     width: 1000px;
     height: 800px;
-    margine: auto;
+    margin: auto;
     background-color: pink;
 }
 
