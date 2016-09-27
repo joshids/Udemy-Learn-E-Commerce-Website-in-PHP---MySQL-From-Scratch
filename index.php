@@ -1,4 +1,7 @@
 <!DOCTYPE>
+<?php
+include('functions/functions.php');
+?>
 <html>
 <head>
 <title>My Online Shope</title>
@@ -30,26 +33,22 @@
         <div id="sidebar">
             <div id="sidebar_title">Categories</div>
             <ul id="cats">
-                <li><a href="#">Laptops</a> </li>
-                <li><a href="#">Computers</a> </li>
-                <li><a href="#">Mobiles</a> </li>
-                <li><a href="#">Cameras</a> </li>
-                <li><a href="#">iPads</a> </li>
-                <li><a href="#">Tablets</a> </li>
+                <?php
+                    getCategories(); 
+                ?>
             </ul>
             <div id="sidebar_title">Brands</div>
             <ul id="cats">
-                <li><a href="#">HP</a> </li>
-                <li><a href="#">Dell</a> </li>
-                <li><a href="#">Motorola</a> </li>
-                <li><a href="#">Sony Ericsson</a> </li>
-                <li><a href="#">LG</a> </li>
-                <li><a href="#">Apple</a> </li>
+                <?php
+                    getBrands(); 
+                ?>
             </ul>
         </div>
         <div id="content_area">This is content area</div>
         </div>
-        <div id="footer">This is the footer</div>
+        <div id="footer">
+            <h2 style="text-align: center; padding-top: 30px;">&copy; 2016 www.onlineTuting.com</h2>;
+        </div>
     </div>
 </body>
 </html?
