@@ -5,7 +5,7 @@
     <style>
         .form-label{
             text-align:right;
-            text-weight: bolder;
+            font-weight: bolder;
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -53,7 +53,7 @@
                 <td><input type="text" name="product_keywords" class="form-control"></td>
             </tr>
             <tr align="center">                
-                <td colspan="2"><input type="submit" name="insert_product" value="Insert Now" /></td>
+                <td colspan="2"><input type="submit" name="insert_product" value="Insert Product Now" /></td>
             </tr>
         </table>
     </form>        
