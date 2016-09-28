@@ -19,6 +19,7 @@
         }
         .form-control[type='file']{
             padding-left: 0px;
+        }
     </style>
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
     <script>tinymce.init({ selector:'textarea' });</script>
@@ -100,7 +101,17 @@ if(isset($_POST['insert_product'])){
     $productImage = $_FILES['product_image']['name'];
     $productImage_tmp = $_FILES['product_image']['tmp_name'];
 
-    $sql = "";
+    move_uploaded_file($productImage_tmp, "product_images/$productImage");
+
+    $sql_insert_product = "insert into products (title, category_id, brand_id, price, description, image, keywords) values ('$title', '$categoryId', '$brandId', '$price', '$desc', '$productImage', '$keywords')";
+    //echo $sql_insert_product;
+    global $con;
+    $insert_pro = mysqli_query($con, $sql_insert_product);
+
+    if($insert_pro){
+        echo '<script>alert("product has been inserted!")</script>';
+        echo '<script>window.href = "insertProduct.php"</script>';
+    }
 }
 
 ?>

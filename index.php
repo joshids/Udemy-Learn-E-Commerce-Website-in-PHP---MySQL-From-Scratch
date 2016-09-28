@@ -44,7 +44,11 @@ include('functions/functions.php');
                 ?>
             </ul>
         </div>
-        <div id="content_area">This is content area</div>
+        <div id="content_area">
+            <div id="products_box">
+                <?php getProducts();?>
+            </div>
+        </div>
         </div>
         <div id="footer">
             <h2 style="text-align: center; padding-top: 30px;">&copy; 2016 www.onlineTuting.com</h2>;
