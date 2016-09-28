@@ -46,8 +46,8 @@ while($row = mysqli_fetch_array($run)){
                 <h3>$title</h3>
                 <image src='admin_area/product_images/$image' width='180px' height='180' />
                 <p><b>$ $price</b></p>
-                <a href='details.php' style='float:left'>Details</a>
-                <a href='index.php'><button style='float: right'> Add to cart</button></a>    
+                <a href='details.php?pro_id=$id' style='float:left'>Details</a>
+                <a href='index.php?pro_id=$id'><button style='float: right'> Add to cart</button></a>    
             </div>
         ";
 

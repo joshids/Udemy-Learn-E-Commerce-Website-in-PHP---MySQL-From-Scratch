@@ -143,6 +143,22 @@ body{
     text-decoration: underline;
 }
 
+#shopping_cart {
+    width: 800px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+#shopping_cart a{
+    color: yellow;
+    text-decoration: none;
+}
+#shopping_cart span{
+    float: right;
+    font-size: 18px;
+    padding: 5px;
+    line-height: 40px;
+}
 #products_box {
     width: 780px;
     text-align: center;

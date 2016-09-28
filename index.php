@@ -45,6 +45,13 @@ include('functions/functions.php');
             </ul>
         </div>
         <div id="content_area">
+            <div id="shopping_cart">
+                <span>Welcome Guest!
+                <b style="color:yellow">Shopping cart</b> Total Items:0 Total Price:0 $
+                <a href="cart.php">Go to cart</a>
+                </span>
+
+            </div>
             <div id="products_box">
                 <?php getProducts();?>
             </div>
